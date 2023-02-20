@@ -1,6 +1,8 @@
 body{
+  background: url(assets/img/nomad-coach.png) center center no-repeat; background-size: cover;
   background-color: #333;
   margin:0px;
+  height: 90vh
 }
 .logo{
   display: flex;
@@ -17,7 +19,7 @@ height: 250px;
 }
 
 .container{
-  opacity: 50%;
+  opacity: 95%;
   background-color: #f1f1f1;
   display: flex;
   justify-content: center;
@@ -26,30 +28,20 @@ height: 250px;
   border: 1px solid black;
   border-radius: 25px;;
   width: 50%;
-  margin:auto;
-  margin-bottom: 100px;
+  margin:300px;
+  margin-left:500px;
+  position: relative;
+
 }
 .flex-item {
-
+justify-content: center;
   padding: 20px;
   margin: 10px;
   border-radius: 25px;;
 
-}
-.nav-container{
-  display: flex;
-  background-color: black;
-  margin: 0px;
-  padding: 10px;
 
 }
-  .nav-flex{
-padding-right: 5px;
-list-style-type: none;
-color: antiquewhite;
-flex-wrap: wrap;
 
-}
 ul{
   list-style-type: none;
   margin-block-start: 1em;
@@ -71,11 +63,34 @@ button{
 #search-bar{
   width:70%;
 }
-.footer{
+footer{
+text-align: center;
+  background-color: black;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  color: antiquewhite;
+
+}
+nav{
   display: flex;
-  justify-content: center;
   background-color: black;
   margin: 0px;
   padding: 10px;
+  padding: 20px;
+
+}
+.flex-item-nav{
+  padding-right: 5px;
+  list-style-type: none;
   color: antiquewhite;
+  flex-direction: column;
+}
+.header{
+  margin:0;
+}
+p{
+  font-size: 20px;
 }
