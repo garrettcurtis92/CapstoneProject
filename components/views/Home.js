@@ -11,4 +11,5 @@ export default () => html`
     />
     <button class="flex-item" id="search-button">Search</button>
   </section>
+
 `;
