@@ -15,6 +15,7 @@ function render(state = store.Home) {
   `;
   router.updatePageLinks();
 }
+
 router.hooks({
   before: (done, params) => {
     const view =
