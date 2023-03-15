@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-  <div class="container">
+  <div class="contactUsBox">
     <section class="flex-section">
       <h1 class="contact-header">We'd love to hear from you!</h1>
       <form action="https://formspree.io/f/xqkopjdn" method="post">

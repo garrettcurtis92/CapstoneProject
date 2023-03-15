@@ -1,7 +1,7 @@
 import html from "html-literal";
 
 export default () => html`
-  <section class="container">
+  <section class="searchBar">
     <div class="header">
     <input
       id="search-bar"

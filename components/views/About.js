@@ -3,7 +3,7 @@ import html from "html-literal";
 export default state => {
   console.log("state", state);
   return html`
-    <div class="container">
+    <div class="aboutUsBox">
       <h1 class="flex-item">About Us</h1>
       <h2 class="flex-item">A better way to find available coaches.</h2>
       <p class="flex-item">
