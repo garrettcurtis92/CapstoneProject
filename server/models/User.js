@@ -1,18 +1,21 @@
 const mongoose = require("mongoose");
 
 const usersSchema = new mongoose.Schema({
-  Name: {
+  name: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
   },
-  Specialty: {
+  specialty: {
     type: String,
     required: true,
     validate: /^[A-Za-z0-9 ]*$/
+  },
+  image: {
+    type: String
   }
 });
 
-const Result = mongoose.model("Result", usersSchema);
+const User = mongoose.model("User", usersSchema);
 
-module.exports = Result;
+module.exports = User;

@@ -1,128 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
 body{
-  background: url(assets/img/nomad-coach.png) center center no-repeat; background-size: cover;
-  background-color: #333;
-  margin:0px;
-  height: 90vh
-}
-.logo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-
-}
-
-img {
-height: 250px;
+  font-family: 'Raleway', sans-serif;
+  background-size: cover;
+  background-image: url(assets/img/22_dhans11.jpg)
 
 
-}
-
-.container{
-  opacity: 95%;
-  background-color: #f1f1f1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  border: 1px solid black;
-  border-radius: 25px;;
-  width: 50%;
-  margin:300px;
-  margin-left:500px;
-  position: relative;
-
-}
-.flex-item {
-justify-content: center;
-  padding: 20px;
-  margin: 10px;
-  border-radius: 25px;;
-
-
-}
-
-ul{
-  list-style-type: none;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-}
-button{
-  background-color: #5C7817;
-}
-#button{
-  display: inline;
-  width: 40%;
-}
-#search-button{
-  width: 40%;
-  margin-left: 100px;
-}
-#search-bar{
-  width:70%;
 }
 footer{
-text-align: center;
-  background-color: black;
   position: fixed;
+  bottom:10px;
   left: 0;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  color: antiquewhite;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #454851;
+}
 
-}
-nav{
-  display: flex;
-  background-color: black;
-  margin: 0px;
-  padding: 10px;
-  padding: 20px;
 
-}
-.flex-item-nav{
-  padding-right: 5px;
-  list-style-type: none;
-  color: antiquewhite;
-  flex-direction: column;
-}
-.header{
-  margin:0;
-}
-p{
-  font-size: 20px;
-}
-.results{
-  opacity: 95%;
-  border-radius: 25px;
-  margin: 50px;
-  padding: 100px;
-  background-color: #f1f1f1
+  nav{
+    display: flex;
+    justify-content: space-evenly;
+    color: #9DD9D2;
+    text-decoration: none;
+    font-size: larger;
+  }
+
+  .logo{
+    height: auto;
+    width: 500px;
+
+  }
+
+  .logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+a {
+text-decoration: none;
+color:#454851
 
 }
 
-.searchBar{
+a:hover{
+  color: white;
+}
+.search_container {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
-}
-.aboutUsBox{
-  opacity: 95%;
-  border-radius: 25px;
-  margin: 50px;
-  padding: 100px;
-  background-color: #f1f1f1
-}
+      padding-top: 64px;
+      margin: 4px;
+      height: 50vh;
+      align-self:flex-start;
 
-.contactUsBox{
-  opacity: 95%;
-  border-radius: 25px;
-  margin: 50px;
-  padding: 100px;
-  text-align: center;
-  background-color: #f1f1f1
+}
+.searchForm{
+  display: flex;
+  justify-content: flex-start;
+}
+.search_input {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-right:100px;
+  display: flex;
+  justify-content: center;
+  opacity: 50%;
+  width: 80%;
+  padding: 12px 24px;
+  background-color:white;
+  font-size: 14px;
+  line-height: 18px;
+  background-size: 18px ;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  color: #575756;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+nav > li{
+  list-style: none;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+.searchButton{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  margin-top:5px;
+  margin-right:180px;
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  width: 30%;
+  padding: 12px 24px;
+  background-color:transparent;
+  font-size: 14px;
+  line-height: 18px;
+  background-size: 18px ;
+  border-radius: 50px;
+  border: 1px solid #575756;
+  text-transform:uppercase;
+
 
 }
