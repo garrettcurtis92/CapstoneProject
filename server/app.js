@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const app = express();
+const users = require("./routers/users");
 
 dotenv.config();
 mongoose.connect(process.env.MONGODB);
@@ -42,5 +43,6 @@ app.post("/add", (request, response) => {
   };
   response.json(responseBody);
 });
+app.use("/users", users);
 
 app.listen(4040, () => console.log("Listening on port 4040"));

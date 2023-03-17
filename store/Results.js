@@ -1,4 +1,5 @@
 export default {
   header: "Search Results",
-  view: "Results"
+  view: "Results",
+  users: []
 };

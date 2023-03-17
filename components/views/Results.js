@@ -1,6 +1,6 @@
 import html from "html-literal";
 
-export default () => html`
+export default state => html`
   <!DOCTYPE html>
   <html>
     <head>
@@ -9,9 +9,13 @@ export default () => html`
     <body>
       <h1>Search Results:</h1>
       <ul>
-        <li class="results">Lorem Ipsum</li>
-        <li class="results">Lorem Ipsum</li>
-        <li class="results">Lorem Ipsum</li>
+        ${state.users.map(user => {
+          return `<li class="results">
+            <img src="${user.image}"/>
+            ${user.name} | Specialty: ${user.specialty}
+            </li>
+            <button class="flex-item">Book Now</button>`;
+        })}
       </ul>
     </body>
   </html>
