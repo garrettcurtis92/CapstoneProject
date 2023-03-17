@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,900');
+
 body{
   font-family: 'Raleway', sans-serif;
   background-size: cover;
@@ -17,13 +17,13 @@ footer{
 }
 
 
-  nav{
+  /* nav{
     display: flex;
     justify-content: space-evenly;
     color: #9DD9D2;
     text-decoration: none;
     font-size: larger;
-  }
+  } */
 
   .logo{
     height: auto;
@@ -77,10 +77,10 @@ a:hover{
   text-transform: uppercase;
   letter-spacing: 1.5px;
 }
-nav > li{
+/* nav > li{
   list-style: none;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-}
+} */
 .searchButton{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   margin-top:5px;
@@ -100,3 +100,68 @@ nav > li{
 
 
 }
+@media (max-width: 549px){
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  nav > i {
+    padding: 1rem;
+    font-size: 2em;
+  }
+
+  nav > ul {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    padding: 0.5rem;
+    list-style-type: none;
+  }
+
+  #bio img {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-right: 1rem;
+  }
+}
+@media (min-width: 550px) {
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  nav > ul > li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 0.5rem;
+
+  }
+
+  nav > .fa-bars {
+    display: none;
+  }
+
+  #bio {
+    margin-right: 3rem;
+  }
+
+  #bio img {
+    float: left;
+    width: 25%;
+    height: auto;
+    margin-right: 1rem;
+  }
+}
+
