@@ -16,7 +16,7 @@ export default () => html`
       type="text"
       placeholder="Search"
     />
-    <input type="submit" name="submit" class="searchButton" id="search-button" value="Search" placeholder="$1" />
+    <input type="submit" name="submit" class="searchButton" id="search-button" value="Search"/>
     </form>
     </div>
 
