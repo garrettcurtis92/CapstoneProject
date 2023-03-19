@@ -3,8 +3,8 @@ import html from "html-literal";
 export default state => {
   console.log("state", state);
   return html`
-    <div class="aboutUsBox">
-      <h1 class="flex-item">About Us</h1>
+    <div id="aboutBox" class="aboutUsBox">
+      <h1 class="aboutUsHeader">About Us</h1>
       <h2 class="flex-item">A better way to find available coaches.</h2>
       <p class="flex-item">
         Hello! Thank you for visiting Nomad Coach! We are thrilled to have you
@@ -19,7 +19,7 @@ export default state => {
         inquiries you may have! Thank you and welcome.
       </p>
       <br />
-      <p>${state.joke}</p>
+      <p class="joke">${state.joke}</p>
     </div>
   `;
 };

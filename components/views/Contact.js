@@ -1,10 +1,14 @@
 import html from "html-literal";
 
 export default () => html`
-  <div class="contactUsBox">
+  <div id="contactBox" class="contactUsBox">
     <section class="flex-section">
-      <h1 class="contact-header">We'd love to hear from you!</h1>
-      <form action="https://formspree.io/f/xqkopjdn" method="post">
+      <form
+        class="contactForm"
+        action="https://formspree.io/f/xqkopjdn"
+        method="post"
+      >
+        <h2 class="contact-header">Contact Us</h2>
         <label
           class="flex-item"
           for="first_name"
@@ -47,13 +51,6 @@ export default () => html`
           name="email"
           placeholder="Email"
         /><br /><br />
-
-        <label
-          class="flex-item"
-          for="message"
-          placeholder="Write us a message!"
-        ></label
-        ><br />
         <textarea
           class="flex-item"
           id="message"
@@ -62,9 +59,9 @@ export default () => html`
           cols="30"
           placeholder="Message"
         ></textarea
-        ><br /><br />
+        ><br />
 
-        <button class="flex-item" id="button">Submit</button>
+        <button class="submitButton" id="button">Submit</button>
       </form>
     </section>
   </div>
