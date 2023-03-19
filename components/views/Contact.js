@@ -9,11 +9,6 @@ export default () => html`
         method="post"
       >
         <h2 class="contact-header">Contact Us</h2>
-        <label
-          class="flex-item"
-          for="first_name"
-          placeholder="First Name"
-        ></label>
         <input
           class="flex-item"
           type="text"
@@ -21,12 +16,6 @@ export default () => html`
           name="first_name"
           placeholder="First Name"
         /><br /><br />
-
-        <label
-          class="flex-item"
-          for="last_name"
-          placeholder="Last Name"
-        ></label>
         <input
           class="flex-item"
           type="text"
@@ -34,16 +23,12 @@ export default () => html`
           name="last_name"
           placeholder="Last Name"
         /><br /><br />
-
-        <label class="flex-item" for="phone" placeholder="Phone Number"></label>
         <input
           class="flex-item"
           name="fone"
           id="fone"
           placeholder="555-555-5555"
         /><br /><br />
-
-        <label class="flex-item" for="email" placeholder="Email"></label>
         <input
           class="flex-item"
           type="email"

@@ -19,8 +19,8 @@ footer{
 
 
   .logo{
-    margin-top:400px;
-    height: auto;
+    margin-top:100px;
+    height: 300px;
     width: 500px;
 
   }
@@ -96,7 +96,6 @@ a:hover{
 @media (max-width: 549px){
   #aboutBox{
     height:auto;
-
   }
   #contactBox{
     height:auto;
@@ -113,8 +112,9 @@ a:hover{
   }
 
   .logo{
+    height:200px;
     margin-top: 100;
-width: 300px;
+width: auto;
   }
   .hidden--mobile {
     display: none !important;
