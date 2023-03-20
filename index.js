@@ -22,6 +22,7 @@ function afterRender(state) {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector("nav > ul").classList.toggle("hidden--mobile");
   });
+
   if (state.view === "Home") {
     document.querySelector("form").addEventListener("submit", event => {
       event.preventDefault();
