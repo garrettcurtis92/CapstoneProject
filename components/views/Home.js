@@ -14,7 +14,7 @@ export default () => html`
       id="search-bar"
       class="search_input"
       type="text"
-      placeholder="Search"
+      placeholder="Search for a Specialty"
     />
     <input type="submit" name="submit" class="searchButton" id="search-button" value="Search"/>
     </form>

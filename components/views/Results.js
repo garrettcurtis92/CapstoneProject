@@ -7,16 +7,20 @@ export default state => html`
       <title>User Search Results</title>
     </head>
     <body>
-      <h1>Search Results:</h1>
-      <ul>
-        ${state.users.map(user => {
-          return `<li class="results">
-            <img src="${user.image}"/>
+      <div class="resultsBox">
+        <h2 class="resultsHeader">Search Results:</h2>
+        <ul>
+          ${state.users.map(user => {
+            return `
+
+            <li class="results">
+            <img id="profileImg" src="${user.image}"/><button class="resultsSubmit">Book Now</button>
             ${user.name} | Specialty: ${user.specialty}
             </li>
-            <button class="flex-item">Book Now</button>`;
-        })}
-      </ul>
+            `;
+          })}
+        </ul>
+      </div>
     </body>
   </html>
 `;
