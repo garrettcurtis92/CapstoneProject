@@ -7,8 +7,11 @@ export default state => {
     <h1 class="bookedBox">
       Congratulations! your coach has been successfully booked. Information will
       be sent to your email.
-      <br>
+      <br />
       <img id="thumbsUp" class="logo" src="${thumbsUp}" />
+      <a class="makeAnotherSearch" href="/Home" title="/Home" data-navigo
+        >Make another search!</a
+      >
     </h1>
   `;
 };

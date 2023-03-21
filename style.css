@@ -342,3 +342,16 @@ border-bottom:3px solid #78788c
   margin-left:250px;
   padding-bottom:20px;
 }
+
+.makeAnotherSearch{
+  border-radius: 30px;;
+  border: 2px solid black;
+  padding: 7px
+
+}
+.makeAnotherSearch:hover{
+  box-shadow:0 0 40px -10px #000;
+  background:#78788c;
+  color:#fff
+
+}
